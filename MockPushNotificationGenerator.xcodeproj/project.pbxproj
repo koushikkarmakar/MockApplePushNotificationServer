@@ -3,15 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0A4BCD7333C4233C018D9D /* Pods_MockPushNotificationGeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E207E30E8C215CAEB8DB894 /* Pods_MockPushNotificationGeneratorTests.framework */; };
 		BAF61AC02587762B00192F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF61ABF2587762B00192F64 /* AppDelegate.swift */; };
 		BAF61AC22587762B00192F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF61AC12587762B00192F64 /* ViewController.swift */; };
 		BAF61AC42587762C00192F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF61AC32587762C00192F64 /* Assets.xcassets */; };
 		BAF61AC72587762C00192F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF61AC52587762C00192F64 /* Main.storyboard */; };
 		BAF61AD32587762C00192F64 /* MockPushNotificationGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF61AD22587762C00192F64 /* MockPushNotificationGeneratorTests.swift */; };
+		BAF61ADE258776A400192F64 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF61ADD258776A400192F64 /* ServerManager.swift */; };
+		C1841EBE9EFF33BA4CD594DD /* Pods_MockPushNotificationGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8215EDCCA7925338E15A14 /* Pods_MockPushNotificationGenerator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E207E30E8C215CAEB8DB894 /* Pods_MockPushNotificationGeneratorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockPushNotificationGeneratorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71EC15935C1366AE9537F696 /* Pods-MockPushNotificationGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockPushNotificationGenerator.release.xcconfig"; path = "Target Support Files/Pods-MockPushNotificationGenerator/Pods-MockPushNotificationGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		7B8215EDCCA7925338E15A14 /* Pods_MockPushNotificationGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockPushNotificationGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3E9FF164C7322A557BBF6D /* Pods-MockPushNotificationGeneratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockPushNotificationGeneratorTests.debug.xcconfig"; path = "Target Support Files/Pods-MockPushNotificationGeneratorTests/Pods-MockPushNotificationGeneratorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAF61ABC2587762B00192F64 /* MockPushNotificationGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockPushNotificationGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF61ABF2587762B00192F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAF61AC12587762B00192F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +42,9 @@
 		BAF61ACE2587762C00192F64 /* MockPushNotificationGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockPushNotificationGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF61AD22587762C00192F64 /* MockPushNotificationGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPushNotificationGeneratorTests.swift; sourceTree = "<group>"; };
 		BAF61AD42587762C00192F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF61ADD258776A400192F64 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		DD19EC4A0977DED825DC21A2 /* Pods-MockPushNotificationGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockPushNotificationGenerator.debug.xcconfig"; path = "Target Support Files/Pods-MockPushNotificationGenerator/Pods-MockPushNotificationGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		EC43EA46A683902304969E2F /* Pods-MockPushNotificationGeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockPushNotificationGeneratorTests.release.xcconfig"; path = "Target Support Files/Pods-MockPushNotificationGeneratorTests/Pods-MockPushNotificationGeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1841EBE9EFF33BA4CD594DD /* Pods_MockPushNotificationGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,18 +60,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0A4BCD7333C4233C018D9D /* Pods_MockPushNotificationGeneratorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A62AEB74CA7B3659EDF555A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD19EC4A0977DED825DC21A2 /* Pods-MockPushNotificationGenerator.debug.xcconfig */,
+				71EC15935C1366AE9537F696 /* Pods-MockPushNotificationGenerator.release.xcconfig */,
+				AF3E9FF164C7322A557BBF6D /* Pods-MockPushNotificationGeneratorTests.debug.xcconfig */,
+				EC43EA46A683902304969E2F /* Pods-MockPushNotificationGeneratorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BAF61AB32587762B00192F64 = {
 			isa = PBXGroup;
 			children = (
 				BAF61ABE2587762B00192F64 /* MockPushNotificationGenerator */,
 				BAF61AD12587762C00192F64 /* MockPushNotificationGeneratorTests */,
 				BAF61ABD2587762B00192F64 /* Products */,
+				1A62AEB74CA7B3659EDF555A /* Pods */,
+				BB3B378D5D8CEF0778460E4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +107,7 @@
 				BAF61AC52587762C00192F64 /* Main.storyboard */,
 				BAF61AC82587762C00192F64 /* Info.plist */,
 				BAF61AC92587762C00192F64 /* MockPushNotificationGenerator.entitlements */,
+				BAF61ADD258776A400192F64 /* ServerManager.swift */,
 			);
 			path = MockPushNotificationGenerator;
 			sourceTree = "<group>";
@@ -95,6 +121,15 @@
 			path = MockPushNotificationGeneratorTests;
 			sourceTree = "<group>";
 		};
+		BB3B378D5D8CEF0778460E4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B8215EDCCA7925338E15A14 /* Pods_MockPushNotificationGenerator.framework */,
+				6E207E30E8C215CAEB8DB894 /* Pods_MockPushNotificationGeneratorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAF61AD72587762C00192F64 /* Build configuration list for PBXNativeTarget "MockPushNotificationGenerator" */;
 			buildPhases = (
+				35EBF37DAC9C332C62333F3B /* [CP] Check Pods Manifest.lock */,
 				BAF61AB82587762B00192F64 /* Sources */,
 				BAF61AB92587762B00192F64 /* Frameworks */,
 				BAF61ABA2587762B00192F64 /* Resources */,
+				D5312FE1C7D266307F82D42B /* [CP] Embed Pods Frameworks */,
+				BAF61ADF258779DB00192F64 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -119,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAF61ADA2587762C00192F64 /* Build configuration list for PBXNativeTarget "MockPushNotificationGeneratorTests" */;
 			buildPhases = (
+				F11E2D3A4FB12C6FE7829976 /* [CP] Check Pods Manifest.lock */,
 				BAF61ACA2587762C00192F64 /* Sources */,
 				BAF61ACB2587762C00192F64 /* Frameworks */,
 				BAF61ACC2587762C00192F64 /* Resources */,
@@ -190,12 +229,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35EBF37DAC9C332C62333F3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MockPushNotificationGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF61ADF258779DB00192F64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" --config .swiflint.yml >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		D5312FE1C7D266307F82D42B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MockPushNotificationGenerator/Pods-MockPushNotificationGenerator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MockPushNotificationGenerator/Pods-MockPushNotificationGenerator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MockPushNotificationGenerator/Pods-MockPushNotificationGenerator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F11E2D3A4FB12C6FE7829976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MockPushNotificationGeneratorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAF61AB82587762B00192F64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BAF61AC22587762B00192F64 /* ViewController.swift in Sources */,
+				BAF61ADE258776A400192F64 /* ServerManager.swift in Sources */,
 				BAF61AC02587762B00192F64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +466,7 @@
 		};
 		BAF61AD82587762C00192F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD19EC4A0977DED825DC21A2 /* Pods-MockPushNotificationGenerator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MockPushNotificationGenerator/MockPushNotificationGenerator.entitlements;
@@ -365,6 +487,7 @@
 		};
 		BAF61AD92587762C00192F64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71EC15935C1366AE9537F696 /* Pods-MockPushNotificationGenerator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MockPushNotificationGenerator/MockPushNotificationGenerator.entitlements;
@@ -385,6 +508,7 @@
 		};
 		BAF61ADB2587762C00192F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF3E9FF164C7322A557BBF6D /* Pods-MockPushNotificationGeneratorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -407,6 +531,7 @@
 		};
 		BAF61ADC2587762C00192F64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC43EA46A683902304969E2F /* Pods-MockPushNotificationGeneratorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
