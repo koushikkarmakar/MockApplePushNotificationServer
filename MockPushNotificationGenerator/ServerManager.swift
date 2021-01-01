@@ -11,13 +11,13 @@ class ServerManager {
     func startServer() {
         do {
             try server.start(port: 8081, interface: "localhost")
-            setupSecondPushEndpoint()
+            setupPushEndpoint()
         } catch {
             print("Error starting mock server" + error.localizedDescription)
         }
     }
     
-    private func setupSecondPushEndpoint() {
+    private func setupPushEndpoint() {
         server.route(.POST, pushEndpoint)  {[weak self] request in
             self?.handlePayload(request: request)
         }
