@@ -7,32 +7,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "866F3D91-6D8B-4C31-AA64-6C762396341F"
+            uuid = "ABB5A02D-EBBE-466E-9B28-76EE54CA860A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MockPushNotificationGenerator/ServerManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "setupPushEndpoint()"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "setupSecondPushEndpoint()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ABB5A02D-EBBE-466E-9B28-76EE54CA860A - 8380f9ea8db9422b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MockPushNotificationGenerator.ServerManager.(setupSecondPushEndpoint in _5DAC62C6CD053E2388B1FDBA48742473)() -&gt; ()"
+                  moduleName = "MockPushNotificationGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/k.karmakar/Desktop/MockPushNotificationGenerator/MockPushNotificationGenerator/ServerManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "ABB5A02D-EBBE-466E-9B28-76EE54CA860A - 839346a4b660190f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Telegraph.HTTPRequest) -&gt; Swift.Optional&lt;Telegraph.HTTPResponse&gt; in MockPushNotificationGenerator.ServerManager.(setupSecondPushEndpoint in _5DAC62C6CD053E2388B1FDBA48742473)() -&gt; ()"
+                  moduleName = "MockPushNotificationGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/k.karmakar/Desktop/MockPushNotificationGenerator/MockPushNotificationGenerator/ServerManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "608F5345-0141-48C1-9F0E-6F2187C9C760"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MockPushNotificationGenerator/ServerManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "run(command:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7D7632D8-9FBB-41E3-BE9B-D7DD8F602076"
+            uuid = "E07B3620-800E-4CBB-A8A8-B86F7FF6CF2E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MockPushNotificationGenerator/ServerManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "createTemporaryPushFile(payload:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "handlePayload(request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D091C65C-195C-4BC0-88AF-008481358320"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MockPushNotificationGenerator/ServerManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "handlePayload(request:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
