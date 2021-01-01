@@ -16,56 +16,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "setupSecondPushEndpoint()"
+            landmarkName = "setupPushEndpoint()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "ABB5A02D-EBBE-466E-9B28-76EE54CA860A - 8380f9ea8db9422b"
+                  uuid = "ABB5A02D-EBBE-466E-9B28-76EE54CA860A - 8d4eb150bdea66fc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MockPushNotificationGenerator.ServerManager.(setupSecondPushEndpoint in _5DAC62C6CD053E2388B1FDBA48742473)() -&gt; ()"
+                  symbolName = "MockPushNotificationGenerator.ServerManager.(setupPushEndpoint in _5DAC62C6CD053E2388B1FDBA48742473)() -&gt; ()"
                   moduleName = "MockPushNotificationGenerator"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/k.karmakar/Desktop/MockPushNotificationGenerator/MockPushNotificationGenerator/ServerManager.swift"
+                  urlString = "file:///Users/k.karmakar/Desktop/MockApplePushNotificationServer/MockPushNotificationGenerator/ServerManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
                   offsetFromSymbolStart = "22">
                </Location>
                <Location
-                  uuid = "ABB5A02D-EBBE-466E-9B28-76EE54CA860A - 839346a4b660190f"
+                  uuid = "ABB5A02D-EBBE-466E-9B28-76EE54CA860A - 35013ccd38eea45"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Telegraph.HTTPRequest) -&gt; Swift.Optional&lt;Telegraph.HTTPResponse&gt; in MockPushNotificationGenerator.ServerManager.(setupSecondPushEndpoint in _5DAC62C6CD053E2388B1FDBA48742473)() -&gt; ()"
+                  symbolName = "closure #1 (Telegraph.HTTPRequest) -&gt; Swift.Optional&lt;Telegraph.HTTPResponse&gt; in MockPushNotificationGenerator.ServerManager.(setupPushEndpoint in _5DAC62C6CD053E2388B1FDBA48742473)() -&gt; ()"
                   moduleName = "MockPushNotificationGenerator"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/k.karmakar/Desktop/MockPushNotificationGenerator/MockPushNotificationGenerator/ServerManager.swift"
+                  urlString = "file:///Users/k.karmakar/Desktop/MockApplePushNotificationServer/MockPushNotificationGenerator/ServerManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
                   offsetFromSymbolStart = "88">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "608F5345-0141-48C1-9F0E-6F2187C9C760"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MockPushNotificationGenerator/ServerManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "run(command:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
