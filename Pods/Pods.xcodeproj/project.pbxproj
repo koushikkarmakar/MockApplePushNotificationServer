@@ -1307,7 +1307,7 @@
 			};
 			name = Debug;
 		};
-		778AEFB83163B23235E11AB4BD399036 /* Release */ = {
+		8B2757D413B867ECEFDC200DDE84AFD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFD30702B07D810376FDC7155C3DD519 /* SwiftLint.xcconfig */;
 			buildSettings = {
@@ -1320,7 +1320,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1593,7 +1593,7 @@
 			};
 			name = Debug;
 		};
-		E6D91F2CDD50F80529AC2934CC4EBA2A /* Debug */ = {
+		EBA0CC105C99CE8BFDA51C62E70EA605 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFD30702B07D810376FDC7155C3DD519 /* SwiftLint.xcconfig */;
 			buildSettings = {
@@ -1606,7 +1606,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1755,8 +1755,8 @@
 		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E6D91F2CDD50F80529AC2934CC4EBA2A /* Debug */,
-				778AEFB83163B23235E11AB4BD399036 /* Release */,
+				EBA0CC105C99CE8BFDA51C62E70EA605 /* Debug */,
+				8B2757D413B867ECEFDC200DDE84AFD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
