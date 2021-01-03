@@ -4,10 +4,10 @@ import Telegraph
 typealias JSON = [String: Any]
 
 class ServerManager {
-    
+
     private let server = Server()
     let pushEndpoint = "/simulatorPush"
-    
+
     func startServer() {
         do {
             try server.start(port: 8081, interface: "localhost")
@@ -16,24 +16,24 @@ class ServerManager {
             print("Error starting mock server" + error.localizedDescription)
         }
     }
-    
+
     private func setupPushEndpoint() {
         server.route(.POST, pushEndpoint)  {[weak self] request in
             self?.handlePayload(request: request)
         }
     }
-    
+
     private func handlePayload(request: HTTPRequest) -> HTTPResponse {
         guard let serializedObject = try? JSONSerialization.jsonObject(with: Data(request.body), options: [.allowFragments]),
             let json = serializedObject as? JSON,
             let simId = json["simulatorId"] as? String,
             let appBundleId = json["appBundleId"] as? String,
             let payload = json["pushPayload"] as? JSON
-            
+
             else {
                 return HTTPResponse.init(.badRequest, headers: .empty, content: "Bad Request")
             }
-        
+
         if let pushFileUrl = self.createTemporaryPushFile(payload: payload) {
                 let command = "xcrun simctl push \(simId) \(appBundleId) \(pushFileUrl.path)"
                 self.run(command: command)
@@ -43,7 +43,7 @@ class ServerManager {
                 } catch {
                     print("Error removing file!")
                 }
-                
+
                 return HTTPResponse(.ok, headers: .empty, content: "Ran command: \(command)")
             } else {
                 return HTTPResponse(.internalServerError, headers: .empty, content: "Internal Server Error")
@@ -64,16 +64,22 @@ class ServerManager {
         }
         return tempFileURL
     }
-    
+
     func run(command: String) {
-        let pipe = Pipe()
         let task = Process()
-        task.launchPath = "/bin/sh"
+        let pipe = Pipe()
         task.arguments = ["-c", String(format:"%@", command)]
         task.standardOutput = pipe
-        let file = pipe.fileHandleForReading
+        task.launchPath = "/bin/sh"
+        let data = pipe.fileHandleForReading
         task.launch()
-        if let result = NSString(data: file.readDataToEndOfFile(), encoding: String.Encoding.utf8.rawValue) {
+        
+        guard let readDataToEnd = try? data.readToEnd() else {
+            print("Error")
+            return
+        }
+
+        if let result = NSString(data: readDataToEnd, encoding: String.Encoding.utf8.rawValue) {
             print(result as String)
         }
         else {
