@@ -1,6 +1,7 @@
 os: osx
 osx_image: xcode12.2
 language: swift
-xcode_project: MockPushNotificationGenerator.xcworkspace # path to your xcodeproj folder
+xcode_project: MockPushNotificationGenerator.xcodeproj # path to your xcodeproj folder
 xcode_scheme: MockPushNotificationGeneratorTests
+script: xcodebuild test -workspace MockPushNotificationGenerator.xcworkspace -scheme MockPushNotificationGeneratorTests
 
