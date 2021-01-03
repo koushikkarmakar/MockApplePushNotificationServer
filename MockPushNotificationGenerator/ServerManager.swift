@@ -70,7 +70,7 @@ class ServerManager {
         let pipe = Pipe()
         task.arguments = ["-c", String(format:"%@", command)]
         task.standardOutput = pipe
-        task.launchPath = "/bin/sh"
+        task.launchPath = "/bin/zsh"
         let data = pipe.fileHandleForReading
         task.launch()
         
